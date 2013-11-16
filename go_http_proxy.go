@@ -6,6 +6,11 @@ import (
     "os"
     "io/ioutil"
 )
+
+/**
+原文来自：http://kejibo.com/golang-http-proxy-server/
+*/
+
  
 func handler(w http.ResponseWriter, r *http.Request) {
     resp, err := http.DefaultClient.Do(r)
